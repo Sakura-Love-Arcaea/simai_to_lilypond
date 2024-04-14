@@ -90,7 +90,7 @@ void convert() {
 
 
 int main(int argc, char* argv[]) {
-    fp = fopen("./simai.txt", "r");
+    fp = fopen("/Users/lvjiayao/about_programs/C_language_project/simai_to_lilypond/simai.txt", "r");
 //    outp = fopen(argv[2], "r");
     fscanf(fp, "(%d)", &BPM);
     printf("\\header {\n"
@@ -117,10 +117,10 @@ int main(int argc, char* argv[]) {
 //                printf("\n%d\n", nth_note);
                 break;
             case '\n':
-                if (curly != 0) {
-                    putchar('}');
-                    curly = 0;
-                }
+//                if (curly != 0) {
+//                    putchar('}');
+//                    curly = 0;
+//                }
                 printf("\t\t\t");
                 break;
             case ' ':
